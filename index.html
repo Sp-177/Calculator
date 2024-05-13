@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <form>
+                <div style="display: inline-flex; justify-content: space-evenly;">
+                    
+                    <div class="row" style="background-color: maroon; border-radius: 10px 0 0 10px;">
+                        <input style="border-radius: 10px 0 0 10px;" type="button" value="ON" onclick="turnOn()">
+                    </div>
+                    <div class="display">
+                        <input style="width: 210px;border-radius: 0 10px 10px 0; text-align: center;"  type="text" id="result" name="result" value="OFF"readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <input style="color:aqua ;" type="button" value="AC" onclick="onCalc('AC')">
+                
+                    <input style="color:aqua ;"type="button" value="DE" onclick="deleteLast()">
+                    <input style="color:aqua ;"type="button" value="." onclick="onCalc('.')">
+                    <input style="color:aqua ;"type="button" value="/" onclick="onCalc('/')">
+                </div>
+                <div class="row">
+                    <input type="button" value="7" onclick="onCalc('7')">
+                    <input type="button" value="8" onclick="onCalc('8')">
+                    <input type="button" value="9" onclick="onCalc('9')">
+                    <input style="color:aqua ;" type="button" value="*" onclick="onCalc('*')">
+                </div>
+                <div class="row">
+                    <input type="button" value="4" onclick="onCalc('4')">
+                    <input type="button" value="5" onclick="onCalc('5')">
+                    <input type="button" value="6" onclick="onCalc('6')">
+                    <input style="color:aqua ;" type="button" value="-" onclick="onCalc('-')">
+                </div>
+                <div class="row">
+                    <input type="button" value="1" onclick="onCalc('1')">
+                    <input type="button" value="2" onclick="onCalc('2')">
+                    <input type="button" value="3" onclick="onCalc('3')">
+                    <input style="color:aqua ;" type="button" value="+" onclick="onCalc('+')">
+                </div>
+                <div class="row">
+                    <input type="button" value="00 "onclick="onCalc('00')">
+                    <input type="button" value="0" onclick="onCalc('0')">
+                    <input style="color:aqua; width: 145px ;" type="button" value="=" onclick="calc()" >
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
