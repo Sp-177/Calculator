@@ -1,14 +1,14 @@
 
 function onCalc(s){
     const display=document.getElementById('result');
-    if(display.value!=='OFF'){
+    if(display.value!=='OFF'||display.value!=='ON'){
     if(s=='AC')display.value='';
     else display.value+=s;}
 }
 function deleteLast(){
     
     const display=document.getElementById('result');
-    if(display.value!=='OFF'){
+    if(display.value!=='OFF'||display.value!=='ON'){
     display.value=display.value.slice(0,-1);}
 }
 function calc(){
